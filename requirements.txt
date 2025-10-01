@@ -1,9 +1,3 @@
-# Create a requirements.txt file with the necessary dependencies
-requirements = """fastapi
+fastapi
 uvicorn
 pydantic
-"""
-
-# Save the content to requirements.txt
-with open("requirements.txt", "w") as file:
-    file.write(requirements)
