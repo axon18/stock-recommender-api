@@ -1,14 +1,15 @@
 
 # render.yaml: configuration file for Render deployment
-render_yaml_code = '''
-services:
+
+render_yaml_content = """services:
   - type: web
     name: stock-recommendation-api
     env: python
     buildCommand: ""
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 8080
     plan: free
-'''
+"""
+
 
 # Write the files to disk
 with open("main.py", "w") as f:
@@ -21,3 +22,4 @@ with open("render.yaml", "w") as f:
     f.write(render_yaml_code)
 
 print("Files main.py, requirements.txt, and render.yaml have been created for Render deployment.")
+
