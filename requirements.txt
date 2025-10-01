@@ -1,0 +1,7 @@
+
+# requirements.txt: dependencies for the FastAPI app
+requirements_code = '''
+fastapi
+uvicorn
+pydantic
+'''
