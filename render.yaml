@@ -1,9 +1,7 @@
-with open("render.yaml", "w") as file:
-    file.write("""services:
+services:
   - type: web
     name: stock-recommendation-api
     env: python
     buildCommand: ""
     startCommand: uvicorn main:app --host 0.0.0.0 --port 8080
     plan: free
-""")
